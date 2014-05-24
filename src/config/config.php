@@ -6,7 +6,7 @@ return [
 
     // Cache
     // Laravel documentation for more information
-    'cache_prefix' => 'moltin_cart_',
+    'cache_prefix' => 'laravel_cart_',
     'cache_expire' => '-1', //in minutes, -1  permanent caching
 
     // Identifier
