@@ -40,7 +40,7 @@ class CartServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->package('haska/laravel-snappy');
+        $this->package('haska/laravel-cart');
 
         $that = $this;
 
