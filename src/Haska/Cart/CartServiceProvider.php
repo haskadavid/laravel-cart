@@ -5,11 +5,10 @@ use Illuminate\Support\Facades\Config;
 
 use Haska\Cart\Storage\LaravelSession as SessionStore;
 use Haska\Cart\Storage\LaravelCache as CacheStore;
-use Haska\Cart\Identifier\Cookie as CookieIdentifier;
+use Moltin\Cart\Identifier\Cookie as CookieIdentifier;
 use Haska\Cart\Identifier\RequestCookie as CookieRequestIdentifier;
 
-class CartServiceProvider extends ServiceProvider
-{
+class CartServiceProvider extends ServiceProvider {
     public function getStorageService()
     {
         switch(Config::get('laravel-cart::storage', 'session'))
@@ -45,7 +44,7 @@ class CartServiceProvider extends ServiceProvider
         $that = $this;
 
         $this->app->singleton('cart', function() use ($that) {
-            return new Cart($that->getStorageService(), $that->getIdentifierService());
+            return new /Moltin/Cart/Cart($that->getStorageService(), $that->getIdentifierService());
         });
     }
 

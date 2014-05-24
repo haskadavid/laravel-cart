@@ -3,8 +3,7 @@
 use Moltin\Cart\Item;
 use Session;
 
-class LaravelSession implements \Moltin\Cart\StorageInterface
-{
+class LaravelSession implements \Moltin\Cart\StorageInterface {
     protected $identifier;
     protected static $cart = array();
 

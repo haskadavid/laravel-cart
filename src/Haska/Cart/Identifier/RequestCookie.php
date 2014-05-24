@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Input;
 
-class RequestCookie extends Cookie
-{
+class RequestCookie extends \Moltin\Cart\Cookie {
+
     private $requestID;
 
     public function __construct()

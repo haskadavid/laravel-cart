@@ -5,8 +5,8 @@ use Moltin\Cart\Storage;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Cache as LaravelCacheStorage;
 
-class LaravelCache implements \Moltin\Cart\StorageInterface
-{
+class LaravelCache implements \Moltin\Cart\StorageInterface {
+
     private $cachePrefix;
 
     protected $identifier;
