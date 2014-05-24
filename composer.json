@@ -1,6 +1,7 @@
 {
     "name": "haska/laravel-cart",
     "description": "Laravel cart package",
+    "license": "MIT",
     "authors": [
         {
             "name": "David Haska",
