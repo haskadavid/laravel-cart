@@ -1,9 +1,9 @@
 <?php namespace Haska\Cart\Storage;
 
-use Haska\Cart\Item;
+use Moltin\Cart\Item;
 use Session;
 
-class LaravelSession implements \Haska\Cart\StorageInterface
+class LaravelSession implements \Moltin\Cart\StorageInterface
 {
     protected $identifier;
     protected static $cart = array();
